@@ -3,10 +3,37 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    >
-<TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/hello"
-    />
+>
+	<TextView  
+		android:text="Cadastro de Clientes"
+    	android:textSize="30sp"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:fitsSystemWindows="true"
+    	android:gravity="center"/>
+    
+    <LinearLayout
+    		android:orientation="vertical"
+    		android:gravity="center"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content" 
+    		android:layout_gravity="center">
+    
+    		<Button
+				android:layout_height="wrap_content"
+				android:id="@+id/btnCadastro"
+				android:text="Cadastrar"
+				android:layout_width="200px"
+				android:gravity="center" />
+			
+			
+			<Button
+				android:text="Mostrar"
+				android:id="@+id/btnMostrar"
+				android:gravity="center"
+				android:layout_height="wrap_content"
+				android:layout_width="200px"/>
+				
+	</LinearLayout>
+	    
 </LinearLayout>
