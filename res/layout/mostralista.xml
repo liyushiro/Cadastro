@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:id="@+id/LinearLayout">
+  
+  	<TextView
+  		android:text="Cadastro de Clientes"
+  		android:textSize="30sp"
+  		android:gravity="center"
+  		android:layout_height="wrap_content"
+  		android:layout_width="fill_parent"
+  	/>
+  	
+  	<ScrollView
+  		android:id="@+id/scrollview"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_weight="1"
+  	>
+  		<LinearLayout
+  			android:id="@+id/LinearLayout"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"
+  			android:orientation="vertical"
+   		>
+   			<LinearLayout
+   				android:orientation="horizontal"
+   				android:layout_width="fill_parent"
+   				android:layout_height="10px"
+   		     />
+   		     
+   		     <LinearLayout
+   		     	android:orientation="horizontal"
+   		     	android:layout_width="fill_parent"
+   		     	android:layout_height="wrap_content"
+  	          >
+  	          		<TextView
+  	          			android:textSize="20sp"
+  	          			android:layout_width="wrap_content"
+  	          			android:layout_height="wrap_content"
+  	          			android:text="Nome:"/>
+  	          		
+  	          		<TextView
+  	          			android:id="@+mostra/nome"
+  	          			android:textSize="20sp"
+  	          			android:textColor="#FFFFFF"
+  	          			android:text=""	
+  	          			android:layout_width="wrap_content"
+  	          			android:layout_height="wrap_content"
+  	          		/>	
+  	          		
+  	          		
+  	          </LinearLayout>
+  	          
+  	          <LinearLayout
+  	          		android:orientation="horizontal"
+  	          		android:layout_width="fill_parent"
+  	          		android:layout_height="wrap_content"
+  	          >
+  	          		<TextView
+  	          			android:textSize="20sp"
+  	          			android:layout_width="wrap_content"
+  	          			android:layout_height="wrap_content"
+  	          			android:text="Endereco:"
+  	          		/>
+  	          		<TextView
+  	          			android:textColor="#FFFFFF"
+  	          			android:textSize="20sp"
+  	          			android:text=""
+  	          			android:layout_width="fill_parent"
+  	          			android:layout_height="fill_parent"
+  	          			android:id="@+mostra/endereco"
+  	          	     />
+  	          	     
+  	          </LinearLayout>
+  	          
+  	          <LinearLayout
+  	          	android:orientation="horizontal"
+  	          	android:layout_width="fill_parent"
+  	          	android:layout_height="wrap_content"
+  	          >
+  	          	<TextView
+  	          		android:textSize="20sp"
+  	          		android:layout_width="wrap_content"
+  	          		android:layout_height="wrap_content"
+  	          		android:text="Telefone:"
+  	          	/>
+  	          	
+  	          	<TextView
+  	          		android:textSize="20sp"
+  	          		android:textColor="#FFFFFF"
+  	          		android:text=""
+  	          		android:layout_width="fill_parent"
+  	          		android:layout_height="wrap_content"
+  	          		android:id="@+mostra/telefone"
+  	          	/>
+  	          </LinearLayout>
+  	          
+  	          <LinearLayout
+  	          	android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="20px"
+  	          />
+  	          </LinearLayout>
+  	</ScrollView>
+  	
+  <LinearLayout
+  	android:orientation="horizontal"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:baselineAligned="true"
+  	android:gravity="center"
+  >
+  		<Button
+  			android:layout_width="100px"
+  			android:layout_height="50px"
+  			android:id="@+lista/btnAnterior"
+  			android:text="&lt;- Anterior"/>	
+  		<Button
+  			android:layout_width="100px"
+  			android:layout_height="50px"
+  			android:id="@+lista/btnProximo"
+  			android:text="Proximo -&gt;"/>
+  </LinearLayout>	
+  
+  <LinearLayout
+  	android:orientation="horizontal"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:baselineAligned="true"
+  	android:gravity="center"
+  >
+  	<Button
+  		android:layout_height="50px"
+  		android:id="@+lista/btnVoltar"
+  		android:gravity="center"
+  		android:layout_width="120px"
+  		android:text="Voltar"
+  	/>
+  
+  </LinearLayout>
+
+</LinearLayout>
